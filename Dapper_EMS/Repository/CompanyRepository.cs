@@ -82,7 +82,7 @@ namespace Dapper_EMS.Repository
 
         public async Task DeleteCompany(int id)
         {
-            var query = "DELETE FROM Companies WHERE Id = @Id";
+            var query = "DELETE FROM Companies WHERE Id = @Id ";
 
             using (var connection = _context.CreateConnection())
             {
